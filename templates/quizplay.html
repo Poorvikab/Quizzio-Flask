@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Play</title>
+    <link rel="icon" href="/static/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/custom.css">
+</head>
+<body>
+
+    <h1>Quiz: {{ quiz_code }}</h1>
+
+    <div id="questionsContainer">
+        {% for question in questions %}
+        <div class="question-block" id="question-{{ loop.index }}">
+            <h3>{{ loop.index }}. {{ question['question'] }}</h3>
+            <ul>
+                <li><button class="option-btn" onclick="checkAnswer({{ loop.index }}, 'A')">A: {{ question['optionA'] }}</button></li>
+                <li><button class="option-btn" onclick="checkAnswer({{ loop.index }}, 'B')">B: {{ question['optionB'] }}</button></li>
+                <li><button class="option-btn" onclick="checkAnswer({{ loop.index }}, 'C')">C: {{ question['optionC'] }}</button></li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        let currentQuestion = 0; // Track current question index
+        let score = 0; // Keep track of the score
+
+        // Example function to check the answer
+        async function checkAnswer(questionNumber, selectedOption) {
+    const correctAnswer = {{ questions|tojson }};
+    const selectedQuestion = correctAnswer[questionNumber - 1];  // Adjust indexing since it's 0-based
+
+    const options = document.querySelectorAll(`#question-${questionNumber} .option-btn`);
+    const questionBlock = document.getElementById(`question-${questionNumber}`);
+
+    // Disable buttons after answer is selected
+    options.forEach(btn => btn.disabled = true);
+
+    // Change color based on correctness of answer
+    if (selectedOption === selectedQuestion.correct) {
+        // Correct answer: Green background on the selected option
+        options.forEach(btn => {
+            if (btn.innerText.startsWith(selectedOption)) {
+                btn.style.backgroundColor = 'green';
+            }
+        });
+        score++; // Increment score for correct answer
+    } else {
+        // Incorrect answer: Red background on the selected option
+        options.forEach(btn => {
+            if (btn.innerText.startsWith(selectedOption)) {
+                btn.style.backgroundColor = 'red';
+            }
+        });
+    }
+
+    // Give a short delay before going to the next question
+    setTimeout(async () => {
+        if (currentQuestion < correctAnswer.length - 1) {
+            // Move to the next question
+            currentQuestion++;
+            showQuestion(currentQuestion);
+        } else {
+            // End of quiz, send score to backend
+            const response = await fetch('/end-quiz', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ score: score })
+            });
+
+            // Redirect to the score page
+            window.location.href = '/score';
+        }
+    }, 1000); // Delay of 1 second before moving on
+}
+
+
+
+        function showQuestion(questionIndex) {
+            const questions = document.querySelectorAll('.question-block');
+            questions.forEach((question, index) => {
+                if (index === questionIndex) {
+                    question.style.display = 'block';
+                } else {
+                    question.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize by showing the first question
+        window.onload = function() {
+            showQuestion(currentQuestion);
+        }
+    </script>
+
+</body>
+</html>

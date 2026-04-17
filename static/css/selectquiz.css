@@ -1,0 +1,61 @@
+<<<<<<< HEAD
+body {
+    background-image: url(/static/images/quizToPlay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+}
+button {
+    background-image: url(/static/images/folderpng.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 200px;
+    font-family: "Press Start 2P", sans-serif;
+    color: black;
+}
+div {
+    display: flex;
+    justify-content: space-evenly;
+}
+button:hover {
+    transform: translateY(-5px); /* Move up slightly */
+=======
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/images/quizToPlay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button {
+    background-image: url(/static/images/folderpng.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    /* position: relative;
+    top: 200px; */
+    font-family: "Press Start 2P", sans-serif;
+    color: black;
+}
+div {
+    position: relative;
+    top: 280px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+button:hover {
+    transform: translateY(-5px); 
+>>>>>>> e361375 (Initial push of Flask and Frontend code)
+}

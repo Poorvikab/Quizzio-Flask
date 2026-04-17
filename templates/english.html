@@ -1,0 +1,100 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/english.css') }}">
+</head>
+<body>
+    <div id="div2">
+        <h1 id="question-text">I SPOKE TO __</h1>
+    </div>
+    <div id="div1">
+        <button class="option" onclick="checkAnswer(this, false)">
+            <img src="{{ url_for('static', filename='images/openquiz1.png') }}" id="img">
+        </button>
+        <button class="option" onclick="checkAnswer(this, true)">
+            <img src="{{ url_for('static', filename='images/openquiz1.png') }}" id="img">
+        </button>
+        <button class="option" onclick="checkAnswer(this, false)">
+            <img src="{{ url_for('static', filename='images/openquiz1.png') }}" id="img">
+        </button>
+    </div>
+
+        <div id="div-option"><h3>SHE</h3></div>
+        <div id="div-option1"><h3>HER</h3></div>
+        <div id="div-option2"><h3>HE</h3></div>
+
+        
+        <audio id="correctSound" preload="auto">
+            <source src="{{ url_for('static', filename='audio/correct.mp3') }}" type="audio/wav">
+        </audio>
+        <audio id="incorrectSound" preload="auto">
+            <source src="{{ url_for('static', filename='audio/wrong.mp3') }}" type="audio/wav">
+        </audio>
+    
+    
+    <script src="{{ url_for('static', filename='js/english.js') }}"></script>
+
+
+</body>
+</html>
+
+
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGLISH!</title>
+    <link rel="icon" href="/static/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/english.css') }}">
+</head>
+<body>
+    <div id="div2">
+        <h1 id="question-text">I SPOKE TO __</h1>
+    </div>
+    <div id="div1">
+        <button class="option" onclick="checkAnswer(this, false)">
+            <img src="{{ url_for('static', filename='images/openquiz1.png') }}" id="img">
+        </button>
+        <button class="option" onclick="checkAnswer(this, true)">
+            <img src="{{ url_for('static', filename='images/openquiz1.png') }}" id="img">
+        </button>
+        <button class="option" onclick="checkAnswer(this, false)">
+            <img src="{{ url_for('static', filename='images/openquiz1.png') }}" id="img">
+        </button>
+    </div>
+
+        <div id="div-option"><h3>SHE</h3></div>
+        <div id="div-option1"><h3>HER</h3></div>
+        <div id="div-option2"><h3>HE</h3></div>
+
+        
+        <audio id="correctSound" preload="auto">
+            <source src="{{ url_for('static', filename='audio/correct.mp3') }}" type="audio/wav">
+        </audio>
+        <audio id="incorrectSound" preload="auto">
+            <source src="{{ url_for('static', filename='audio/wrong.mp3') }}" type="audio/wav">
+        </audio>
+    
+    
+    <script src="{{ url_for('static', filename='js/english.js') }}"></script>
+
+
+</body>
+</html>
+
+
+
+>>>>>>> e361375 (Initial push of Flask and Frontend code)

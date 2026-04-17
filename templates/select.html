@@ -1,0 +1,74 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Page</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/select.css') }}">
+</head>
+<body>
+    <!-- Button to redirect to create.html -->
+    <a href="{{ url_for('create') }}">
+        <button id="button">CREATE+</button>
+    </a>
+
+    <!-- Button to redirect to code.html -->
+    <a href="{{ url_for('code') }}">
+        <button id="button1">PLAY<sup id="playPosition">▶</sup></button>
+    </a>
+
+    <!-- Audio for button click sound -->
+    <audio id="clickSound" preload="auto">
+        <source src="{{ url_for('static', filename='audio/click2.wav') }}" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- JavaScript for handling button click sound -->
+    <script src="{{ url_for('static', filename='js/select.js') }}"></script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT!</title>
+    <link rel="icon" href="/static/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/select.css') }}">
+</head>
+<body>
+    
+    {% if current_user.is_authenticated %}
+        <a href="{{ url_for('logout') }}">
+            <button id="logout">LOGOUT</button>
+        </a>
+    {% endif %}
+
+    <a href="{{ url_for('create') }}">
+        <button id="button">CREATE+</button>
+    </a>
+
+    
+    <a href="{{ url_for('code') }}">
+        <button id="button1">PLAY<sup id="playPosition">▶</sup></button>
+    </a>
+
+
+    <audio id="clickSound" preload="auto">
+        <source src="{{ url_for('static', filename='audio/click2.wav') }}" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="{{ url_for('static', filename='js/select.js') }}"></script>
+</body>
+>>>>>>> e361375 (Initial push of Flask and Frontend code)
+</html>

@@ -1,0 +1,8 @@
+flask
+flask_sqlalchemy
+flask_login
+datetime
+flask_bycrypt
+python-dotenv
+spotipy
+requests

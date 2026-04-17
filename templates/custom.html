@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOM QUIZ!</title>
+    <link rel="icon" href="/static/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/custom.css">
+</head>
+<body>
+
+    <!-- Display Quiz Code -->
+    <div style="text-align: center; margin: 10px;">
+        <label for="displayCode">QUIZ CODE:</label>
+        <input type="text" id="displayCode" readonly style="font-size: 16px; padding: 4px; width: 100px; text-align: center;">
+    </div>
+
+    <div id="codePopup" class="popup">
+        <div class="popup-content">
+            <p>Your Quiz Code is:</p>
+            <h2 id="quizCode">00000</h2>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <h1 id="title">CREATE YOUR QUIZ!</h1>
+
+    <form id="quizForm" method="POST">
+        <div id="questionsContainer"></div>
+        <button type="button" id="addQuestionBtn">+ ADD QUESTION</button>
+        <button type="submit" id="doneBtn">DONE!</button>
+    </form>
+
+<!-- AI Create Button -->
+<button type="button" id="aiBtn">Create with AI</button>
+
+<!-- AI Topic Popup -->
+<div id="aiPopup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <p>Enter a topic for your quiz:</p>
+        <input type="text" id="aiTopicInput" placeholder="e.g., Photosynthesis">
+        <button onclick="generateWithAI()">Generate</button>
+        <button onclick="closeAIPopup()">Cancel</button>
+    </div>
+</div>
+
+
+
+    <script>
+        const savedQuestions = {{ saved_questions | tojson | safe }};
+    </script>
+    <script src="/static/js/custom.js"></script>
+
+</body>
+</html>

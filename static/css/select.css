@@ -1,0 +1,137 @@
+<<<<<<< HEAD
+body{
+    background-image: url(/static/images/select.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#button{
+position: absolute;
+top: 320px;
+left: 150px;
+border-radius: 50px;
+border: none;
+height: 70px;
+width: 300px;
+font-family: "Press Start 2P", sans-serif;
+font-size: x-large;
+background-color: #7c0b64;
+background-position-y:center;
+background-image: url(/static/images/selectbg.png);
+background-size: contain;
+background-repeat: no-repeat;
+color: white;
+
+
+}
+
+#button1{
+position: absolute;
+top: 320px;
+right: 170px;
+border-radius: 50px;
+border: none;
+height: 70px;
+width: 300px;
+font-family: "Press Start 2P", sans-serif;
+font-size: x-large;
+background-color: #7c0b64;
+background-image: url(/static/images/selectbg.png);
+background-position-y:center;
+background-size: contain;
+background-repeat: no-repeat;
+color: white;
+
+}
+
+button:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* Move up slightly */
+}
+
+.quizForm {
+    display: none; 
+}
+
+#playPosition{
+position: relative;
+top: 3px;
+font-size: x-large;
+=======
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/images/select.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#button{
+position: absolute;
+top: 320px;
+left: 150px;
+border-radius: 50px;
+border: none;
+height: 70px;
+width: 300px;
+font-family: "Press Start 2P", sans-serif;
+font-size: x-large;
+background-color: #7c0b64;
+background-position-y:center;
+background-image: url(/static/images/selectbg.png);
+background-size: contain;
+background-repeat: no-repeat;
+color: white;
+
+
+}
+
+#button1{
+position: absolute;
+top: 320px;
+right: 170px;
+border-radius: 50px;
+border: none;
+height: 70px;
+width: 300px;
+font-family: "Press Start 2P", sans-serif;
+font-size: x-large;
+background-color: #7c0b64;
+background-image: url(/static/images/selectbg.png);
+background-position-y:center;
+background-size: contain;
+background-repeat: no-repeat;
+color: white;
+
+}
+
+button:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); 
+}
+
+.quizForm {
+    display: none; 
+}
+
+#playPosition{
+position: relative;
+top: 3px;
+font-size: x-large;
+}
+
+#logout{
+    position: absolute;
+    top: 9px;
+    right: 2px;
+    background-color: transparent;
+    font-family: "Press Start 2P", sans-serif;
+    border: none;
+    font-size: large;
+}
+#logout:hover{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); 
+>>>>>>> e361375 (Initial push of Flask and Frontend code)
+}

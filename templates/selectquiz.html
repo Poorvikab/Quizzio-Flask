@@ -1,0 +1,72 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/selectquiz.css') }}">
+</head>
+<body>
+
+    <audio id="clickSound" src="{{ url_for('static', filename='audio/click2.wav') }}"></audio> <!-- Sound file -->
+
+    <div>
+        <a href="{{ url_for('math') }}">
+            <button>MATHS</button>
+        </a>
+        <a href="{{ url_for('gk') }}">
+            <button>G.K</button>
+        </a>
+        <a href="{{ url_for('english') }}">
+            <button>ENGLISH</button>
+        </a>
+        <a href="{{ url_for('science') }}">
+            <button>SCIENCE</button>
+        </a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/selectquiz.js') }}"></script>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT QUIZ!</title>
+    <link rel="icon" href="/static/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/selectquiz.css') }}">
+</head>
+<body>
+
+    <audio id="clickSound" src="{{ url_for('static', filename='audio/click2.wav') }}"></audio> <!-- Sound file -->
+
+    <div>
+        <a href="{{ url_for('math') }}">
+            <button id="select">MATHS</button>
+        </a>
+        <a href="{{ url_for('gk') }}">
+            <button id="select">G.K</button>
+        </a>
+        <a href="{{ url_for('english') }}">
+            <button id="select">ENGLISH</button>
+        </a>
+        <a href="{{ url_for('science') }}">
+            <button id="select">SCIENCE</button>
+        </a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/selectquiz.js') }}"></script>
+
+</body>
+</html>
+>>>>>>> e361375 (Initial push of Flask and Frontend code)

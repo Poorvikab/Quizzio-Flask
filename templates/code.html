@@ -1,0 +1,68 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/code.css') }}">
+</head>
+<body>
+
+    <form id="codeForm" method="POST">
+        <input type="text" name="code" id="username" placeholder="CODE" minlength="5" maxlength="5" required>
+        
+        {% if error %}
+            <p id="errorMessage">⚠️ Invalid Code! Try Again.</p>
+        {% endif %}
+        
+        <button id="select" type="submit"></button>
+    </form>
+
+    <audio id="clickSound" preload="auto">
+        <source src="{{ url_for('static', filename='audio/click2.wav') }}" type="audio/mp4">
+    </audio>
+
+    <script src="{{ url_for('static', filename='js/code.js') }}"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTER CODE!</title>
+    <link rel="icon" href="/static/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/code.css') }}">
+</head>
+<body>
+
+    <form id="codeForm" method="POST">
+        <input type="text" name="code" id="username" placeholder="CODE" minlength="5" maxlength="5" required>
+        
+        {% if error %}
+            <p id="errorMessage">⚠️ Invalid Code! Try Again.</p>
+        {% endif %}
+        
+        <a href="{{ url_for('selectquiz') }}"  target="_blank">
+            <button id="select" type="submit"></button>
+        </a>
+
+        
+    </form>
+
+    <audio id="clickSound" preload="auto">
+        <source src="{{ url_for('static', filename='audio/click2.wav') }}" type="audio/mp4">
+    </audio>
+
+    <script src="{{ url_for('static', filename='js/code.js') }}"></script>
+</body>
+</html>
+>>>>>>> e361375 (Initial push of Flask and Frontend code)

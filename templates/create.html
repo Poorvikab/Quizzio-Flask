@@ -1,0 +1,81 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/create.css">
+</head>
+<body>
+
+    <div>
+        <img src="/static/images/createbtn.png" id="image">
+        <button id="addbtn"></button>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup">
+        <img src="/static/images/namebtn.png" id="namebtn">
+        <input type="text" maxlength="6" placeholder="NAME!" required id="inputBox">
+    </div>
+
+    <!-- Folder Container -->
+    <div id="folderContainer"></div>
+
+    <script src="/static/js/create.js"></script>
+    
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE!</title>
+    <link rel="icon" href="/static/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/create.css">
+</head>
+<body>
+
+    <div>
+        <img src="/static/images/createbtn.png" id="image">
+        <button id="addbtn"></button>
+    </div>
+
+    <div id="popup">
+        <img src="/static/images/namebtn.png" id="namebtn">
+        <form action="POST">
+            <input type="text" maxlength="6" placeholder="NAME!" id="inputBox" required>
+        </form>
+    </div>
+
+    
+
+    <div id="folderContainer">
+    {% for folder in folders %}
+        <div class="folder">
+            <a href="{{ url_for('custom', folder_name=folder.name) }}" target="_blank">
+
+                <img src="/static/images/folderpng.png">
+            </a>
+            <span>{{ folder.name }}</span> <!-- Check if this appears -->
+        </div>
+    {% endfor %}
+    
+    
+    </div>
+    <script src="{{ url_for('static', filename='js/create.js') }}"></script>
+    
+
+</body>
+</html>
+>>>>>>> e361375 (Initial push of Flask and Frontend code)

@@ -1,0 +1,83 @@
+body{
+    background-image: url(/static/images/login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/images/login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#logout-loginform{
+    position: absolute;
+    top: 300px;
+    left: 550px;
+    font-size: x-large;
+}
+#email{
+    font-family: "Press Start 2P", sans-serif;
+    background-color: transparent;
+    width: 150px;
+    height: 24px;
+    position: absolute;
+    left: 240px;
+}
+#password{
+    font-family: "Press Start 2P", sans-serif;
+    background-color: transparent;
+    width: 150px;
+    height: 24px;
+}
+
+#loginbtn{
+    background-color: transparent;
+    font-family: "Press Start 2P", sans-serif;
+    position: absolute;
+    top: 130px;
+    left: 140px;
+    height: 30px;
+}
+#loginbtn:hover{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); 
+}
+
+#para{
+    position: absolute;
+    top: 500px;
+    left: 550px;
+}
+#btn{
+    position: relative;
+    width: 200px;
+    top: 30px;
+    left: -290px;
+}
+
+.flashmsg{
+    position: absolute;
+    top: 200px;
+    left: 535px;
+    color: green;
+    font-style: italic;
+}
+.logout-success {
+    text-decoration: underline;
+    position: relative;
+    left: 50px;
+}
+
+.login-prompt {
+    position: relative;
+    color: blue;
+    top: 3px;
+    left: 90px;
+    text-decoration: underline;
+}
+
