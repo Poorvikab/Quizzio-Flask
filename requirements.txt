@@ -2,7 +2,7 @@ flask
 flask_sqlalchemy
 flask_login
 datetime
-flask_bycrypt
+flask_bcrypt
 python-dotenv
 spotipy
 requests
