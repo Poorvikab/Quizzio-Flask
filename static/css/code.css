@@ -1,66 +1,3 @@
-<<<<<<< HEAD
-body {
-    background-image: url(/static/images/entercode.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#username {
-    background-color: transparent;
-    border: none;
-    color: black;
-    font-family: "Press Start 2P", sans-serif;
-    font-size: x-large;
-    position: absolute;
-    top: 300px;
-    left: 46%;
-}
-#username::placeholder {
-    color: black;
-    background-color: transparent;
-    opacity: 1;
-}
-#username:focus {
-    border: none;
-    outline: none;
-}
-#select {
-    border: none;
-    height: 50px;
-    border-radius: 20%;
-    width: 100px;
-    background-color: #ff3184;
-    background-image: url(/static/images/okay.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    left: 58%;
-    top: 280px;
-    cursor: pointer;
-}
-#select:hover {
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
-}
-#errorMessage {
-    color: red;
-    font-family: "Press Start 2P", sans-serif;
-    font-size: large;
-    position: absolute;
-    top: 370px;
-    left: 50%;
-    text-align: center;
-    height: 100px;
-    width: 500px;
-}
-#triangle {
-    color: white;
-    position: absolute;
-    top: 358px;
-    left: 49.844%;
-    display: none;
-}
-
-=======
 html, body {
     height: 100%;
     margin: 0;
@@ -126,5 +63,3 @@ html, body {
     left: 49.844%;
     display: none;
 }
-
->>>>>>> e361375 (Initial push of Flask and Frontend code)
