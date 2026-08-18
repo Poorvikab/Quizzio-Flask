@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
@@ -199,7 +198,7 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"Database error: {e}")
     app.run(debug=True)
-=======
+
 
 
 
@@ -629,4 +628,3 @@ if __name__=="__main__":
         db.create_all()
 
     app.run(debug=True)
->>>>>>> e361375 (Initial push of Flask and Frontend code)
