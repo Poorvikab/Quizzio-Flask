@@ -1,11 +1,12 @@
-body{
+body {
     background-image: url(/static/images/login.png);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Press Start 2P", sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -14,13 +15,15 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
 }
-#loginform{
+
+#loginform {
     position: absolute;
     top: 300px;
     left: 550px;
     font-size: x-large;
 }
-#email{
+
+#email {
     font-family: "Press Start 2P", sans-serif;
     background-color: transparent;
     width: 150px;
@@ -28,14 +31,15 @@ html, body {
     position: absolute;
     left: 240px;
 }
-#password{
+
+#password {
     font-family: "Press Start 2P", sans-serif;
     background-color: transparent;
     width: 150px;
     height: 24px;
 }
 
-#loginbtn{
+#loginbtn {
     background-color: transparent;
     font-family: "Press Start 2P", sans-serif;
     position: absolute;
@@ -43,27 +47,38 @@ html, body {
     left: 140px;
     height: 30px;
 }
-#loginbtn:hover{
+
+#loginbtn:hover {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
 
-#para{
+#para {
     position: absolute;
     top: 500px;
     left: 550px;
 }
-#btn{
+
+#btn {
     position: relative;
     width: 200px;
     top: 30px;
     left: -290px;
 }
 
-.flashmsg{
+.flash-container {
     position: absolute;
-    top: 200px;
-    left: 535px;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.flashmsg {
     color: blue;
     font-style: italic;
-    text-decoration: underline;}
+    text-decoration: underline;
+}
