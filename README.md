@@ -470,7 +470,6 @@ GEMINI_API_KEY=your_google_gemini_api_key_here
 |---|---|---|
 | `GEMINI_API_KEY` | Google Gemini API key for AI question generation | ✅ Yes |
 
-> ⚠️ Never commit your `.env` file. It is already listed in `.gitignore`.
 
 ---
 
