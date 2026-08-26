@@ -361,59 +361,60 @@ Quizzio-Flask/
 
 ## 📸 Screenshots
 
-> 🖼️ *Replace each placeholder below with an actual screenshot after deployment.*
-
 ### Landing Page
-![Landing Page](screenshots/index.png)
-> *The animated retro-style landing page introducing Quizzio.*
+<img width="1536" height="749" alt="image" src="https://github.com/user-attachments/assets/39740826-b610-4d97-95b8-dbe0e11a1cc3" />
+> The animated retro-style landing page introducing Quizzio.
 
 ---
 
 ### Signup & Login
-![Signup Page](screenshots/signup.png)
-> *User registration form with pixel-art background.*
+<img width="1536" height="747" alt="image" src="https://github.com/user-attachments/assets/01595114-87cb-4802-9d5e-ab40e27de6dd" />
+> User registration form with pixel-art background.
 
-![Login Page](screenshots/login.png)
-> *Login page with flash message feedback.*
+<img width="1536" height="749" alt="image" src="https://github.com/user-attachments/assets/3574e047-e280-4abb-a720-3a745e83afaf" />
+> Login page with flash message feedback.
 
 ---
 
 ### Main Menu
-![Select Page](screenshots/select.png)
-> *The main menu where users choose between playing or creating a quiz.*
+<img width="1536" height="744" alt="image" src="https://github.com/user-attachments/assets/43e227f0-454c-4d1b-a1a4-37238e4bcf47" />
+> The main menu where users choose between playing or creating a quiz.
 
 ---
 
 ### Avatar & Username Selection
-![Switch Page](screenshots/switch.png)
-> *Avatar picker — choose from 12 pixel-art characters before starting.*
+<img width="1536" height="749" alt="image" src="https://github.com/user-attachments/assets/18980a0a-2504-4ff9-a183-60b7dea9e75f" />
+> Avatar picker — choose from 12 pixel-art characters before starting.
 
 ---
 
 ### Subject Quiz
-![Quiz Page](screenshots/quiz.png)
-> *A built-in subject quiz in action — one question at a time.*
+<img width="1535" height="747" alt="image" src="https://github.com/user-attachments/assets/d67b675f-8be3-47e9-9b27-496df2d32d8c" />
+<img width="1536" height="744" alt="image" src="https://github.com/user-attachments/assets/5e1bc591-3902-49f7-84f7-03298b607a13" />
+> A built-in subject quiz in action — one question at a time.
 
 ---
 
 ### Score Page
-![Score Page](screenshots/score.png)
-> *Results screen showing filled/empty hearts representing correct answers.*
+<img width="1536" height="747" alt="image" src="https://github.com/user-attachments/assets/dc8848aa-7ff3-42bb-b7d7-8b3e81d0f160" />
+> Results screen showing filled/empty hearts representing correct answers.
 
 ---
 
 ### Custom Quiz Creator
-![Create Page](screenshots/create.png)
-> *Folder manager for organising custom quizzes.*
+<img width="1535" height="747" alt="image" src="https://github.com/user-attachments/assets/db4bc971-3505-476a-8ac5-acfe0b51b6b3" />
+> Folder manager for organising custom quizzes.
 
-![Custom Quiz Builder](screenshots/custom.png)
-> *The AI-powered quiz builder — enter a topic, Gemini generates 10 MCQs instantly.*
+
+<img width="1536" height="749" alt="image" src="https://github.com/user-attachments/assets/2cedc7d4-9329-4b85-bab3-070dbdce2414" />
+<img width="1536" height="745" alt="image" src="https://github.com/user-attachments/assets/1e7fe60c-59cf-496e-9786-83865c98895f" />
+> The AI-powered quiz builder — enter a topic, Gemini generates 10 MCQs instantly.
 
 ---
 
 ### Shared Quiz Play
-![Quiz Play](screenshots/quizplay.png)
-> *Playing a shared quiz after entering a 5-digit code.*
+<img width="1535" height="747" alt="image" src="https://github.com/user-attachments/assets/66e910d1-9077-4c7c-964b-a14a147b3415" />
+> Playing a shared quiz after entering a 5-digit code.
 
 ---
 
@@ -469,7 +470,6 @@ GEMINI_API_KEY=your_google_gemini_api_key_here
 |---|---|---|
 | `GEMINI_API_KEY` | Google Gemini API key for AI question generation | ✅ Yes |
 
-> ⚠️ Never commit your `.env` file. It is already listed in `.gitignore`.
 
 ---
 
