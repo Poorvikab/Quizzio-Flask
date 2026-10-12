@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎮 Quizzio
+# Quizzio
 
 ### *A retro-styled, full-stack quiz web application built with Flask*
 
@@ -529,14 +529,6 @@ GEMINI_API_KEY=your_google_gemini_api_key_here
 | `POST` | `/generate_questions` | ❌ | AI question generation via Gemini |
 | `GET` | `/quizplay/<quiz_code>` | ✅ | Play a shared quiz |
 | `POST` | `/end-quiz` | ✅ | Save score from shared quiz |
-
----
-
-## 👩‍💻 Author
-
-**Poorvika B**
-- GitHub: [@Poorvikab](https://github.com/Poorvikab)
-- Project: [Quizzio-Flask](https://github.com/Poorvikab/Quizzio-Flask)
 
 ---
 
